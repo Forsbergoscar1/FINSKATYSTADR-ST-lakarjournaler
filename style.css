@@ -69,7 +69,17 @@ body {
 /* HERO */
 
 .hero {
-    background: linear-gradient(135deg, #ffffff, #eaf4ff);
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)),
+        url('images/bildforstasidan.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     padding: 90px 70px;
     border-radius: 28px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.08);
@@ -443,7 +453,7 @@ body {
 .dark-mode .journal-box,
 .dark-mode .meta-item,
 .dark-mode .patient-overview {
-    background: #111827;
+    background-color: #111827;
     color: white;
 }
 
@@ -474,8 +484,21 @@ body {
         align-items: flex-start;
     }
 
+    .brand-name {
+        font-size: 26px;
+        line-height: 1.1;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
     .hero {
         padding: 55px 30px;
+        background-position: center;
     }
 
     .hero h1 {
@@ -491,6 +514,25 @@ body {
     .content-section,
     .journal-page {
         padding: 32px;
+        overflow: hidden;
+    }
+
+    .content-section h1 {
+        font-size: 42px;
+        line-height: 1.1;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .journal-card {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .journal-card strong {
+        font-size: 28px;
+        line-height: 1.2;
+        word-break: break-word;
     }
 
     .patient-overview {
@@ -511,5 +553,15 @@ body {
 
     .journal-entry p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content-section h1 {
+        font-size: 38px;
+    }
+
+    .brand-name {
+        font-size: 24px;
     }
 }
