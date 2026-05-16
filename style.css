@@ -74,7 +74,7 @@ body {
 
     background-image:
         linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)),
-        url('bildforstasidan.jpg');
+       url("assets/images/bildforstasidan.jpg");
 
     background-size: cover;
     background-position: center;
